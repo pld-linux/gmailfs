@@ -49,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog
 %attr(755,root,root) %{_bindir}/gmailfs.py
 %attr(755,root,root) /sbin/mount.gmailfs
-%attr(640,root,root) %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/gmailfs.conf
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/gmailfs.conf
