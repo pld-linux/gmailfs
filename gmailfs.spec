@@ -34,8 +34,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 cp gmailfs.py $RPM_BUILD_ROOT%{_bindir}/gmailfs.py
 
-install -d $RPM_BUILD_ROOT%{_sbindir}
-cp mount.gmailfs $RPM_BUILD_ROOT%{_sbindir}/mount.gmailfs
+install -d $RPM_BUILD_ROOT/sbin
+cp mount.gmailfs $RPM_BUILD_ROOT/sbin/mount.gmailfs
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog
 %attr(755,root,root) %{_bindir}/gmailfs.py
-%attr(755,root,root) %{_sbindir}/mount.gmailfs
+%attr(755,root,root) /sbin/mount.gmailfs
