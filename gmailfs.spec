@@ -31,7 +31,7 @@ przestrzeni u¿ytkownika) aby umo¿liwiæ systemowi plików i libgmail
 komunikowanie siê z us³ug± Gmail.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
