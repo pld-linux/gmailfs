@@ -35,12 +35,11 @@ komunikowanie siê z us³ug± Gmail.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},/sbin,%{_sysconfdir}}
 
-install gmailfs.py $RPM_BUILD_ROOT%{_bindir}/gmailfs.py
-
-install -d $RPM_BUILD_ROOT/sbin
 install mount.gmailfs $RPM_BUILD_ROOT/sbin/mount.gmailfs
+install gmailfs.py $RPM_BUILD_ROOT%{_bindir}/gmailfs.py
+install gmailfs.conf $RPM_BUILD_ROOT%{_sysconfdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,3 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog
 %attr(755,root,root) %{_bindir}/gmailfs.py
 %attr(755,root,root) /sbin/mount.gmailfs
+%attr(640,root,root) %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/gmailfs.conf
