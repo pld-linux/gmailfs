@@ -4,7 +4,7 @@ Name:		gmailfs
 Version:	0.2
 Release:	0.1
 Epoch:		0
-License:	GPLv2
+License:	GPL v2
 Group:		Applications/System
 Source0:	http://richard.jones.name/google-hacks/gmail-filesystem/%{name}.tar.gz
 # Source0-md5:	ef36e6964ef679d6f14be04857f9d3f8
