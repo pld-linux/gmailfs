@@ -9,12 +9,9 @@ Group:		Applications/System
 Source0:	http://richard.jones.name/google-hacks/gmail-filesystem/%{name}-%{version}.tar.gz
 # Source0-md5:	feb0d115729c61e5f366c2c2467cf148
 URL:		http://richard.jones.name/google-hacks/gmail-filesystem/gmail-filesystem.html
-Requires:	libfuse >= 2.0
-Requires:	python
-# does it need "import profile" for real ?
-Requires:	python-devel-tools
 Requires:	python-fuse
 Requires:	python-libgmail
+Requires:	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,10 +32,10 @@ komunikowanie siê z us³ug± Gmail.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},/sbin,%{_sysconfdir}}
+install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},/sbin,%{_sysconfdir}}
 
 install mount.gmailfs $RPM_BUILD_ROOT/sbin/mount.gmailfs
-install gmailfs.py $RPM_BUILD_ROOT%{_bindir}/gmailfs.py
+install gmailfs.py $RPM_BUILD_ROOT%{_datadir}/%{name}
 install gmailfs.conf $RPM_BUILD_ROOT%{_sysconfdir}
 
 %clean
@@ -47,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog
-%attr(755,root,root) %{_bindir}/gmailfs.py
+%attr(755,root,root) %{_datadir}/%{name}
 %attr(755,root,root) /sbin/mount.gmailfs
 %attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/gmailfs.conf
