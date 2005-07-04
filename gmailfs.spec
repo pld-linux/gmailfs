@@ -9,6 +9,7 @@ Group:		Applications/System
 Source0:	http://richard.jones.name/google-hacks/gmail-filesystem/%{name}-%{version}.tar.gz
 # Source0-md5:	feb0d115729c61e5f366c2c2467cf148
 URL:		http://richard.jones.name/google-hacks/gmail-filesystem/gmail-filesystem.html
+Requires:	kernel-misc-fuse
 Requires:	python-fuse
 Requires:	python-libgmail
 Requires:	python-modules
