@@ -1,5 +1,5 @@
 Summary:	A mountable Linux filesystem which uses Gmail account as its storage medium
-Summary(pl):	Montowalny system plików Linuksa u¿ywaj±cy konta Gmail do przechowywania danych
+Summary(pl.UTF-8):   Montowalny system plikÃ³w Linuksa uÅ¼ywajÄ…cy konta Gmail do przechowywania danych
 Name:		gmailfs
 Version:	0.5
 Release:	0.1
@@ -21,12 +21,12 @@ account as its storage medium. GmailFS is a Python application and
 uses the FUSE userland filesystem infrastructure to help provide the
 filesystem, and libgmail to communicate with Gmail.
 
-%description -l pl
-GmailFS udostêpnia montowalny system plików dla Linuksa wykorzystuj±cy
-konto Gmail jako no¶nik do przechowywania danych. GmailFS to aplikacja
-w Pythonie, u¿ywaj±ca FUSE (infrastruktury systemu plików w
-przestrzeni u¿ytkownika) aby umo¿liwiæ systemowi plików i libgmail
-komunikowanie siê z us³ug± Gmail.
+%description -l pl.UTF-8
+GmailFS udostÄ™pnia montowalny system plikÃ³w dla Linuksa wykorzystujÄ…cy
+konto Gmail jako noÅ›nik do przechowywania danych. GmailFS to aplikacja
+w Pythonie, uÅ¼ywajÄ…ca FUSE (infrastruktury systemu plikÃ³w w
+przestrzeni uÅ¼ytkownika) aby umoÅ¼liwiÄ‡ systemowi plikÃ³w i libgmail
+komunikowanie siÄ™ z usÅ‚ugÄ… Gmail.
 
 %prep
 %setup -q
