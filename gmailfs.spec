@@ -1,5 +1,5 @@
 Summary:	A mountable Linux filesystem which uses Gmail account as its storage medium
-Summary(pl.UTF-8):   Montowalny system plików Linuksa używający konta Gmail do przechowywania danych
+Summary(pl.UTF-8):	Montowalny system plików Linuksa używający konta Gmail do przechowywania danych
 Name:		gmailfs
 Version:	0.5
 Release:	0.1
