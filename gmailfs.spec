@@ -1,13 +1,13 @@
 Summary:	A mountable Linux filesystem which uses Gmail account as its storage medium
 Summary(pl.UTF-8):	Montowalny system plików Linuksa używający konta Gmail do przechowywania danych
 Name:		gmailfs
-Version:	0.5
+Version:	0.7.2
 Release:	0.1
 Epoch:		0
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://richard.jones.name/google-hacks/gmail-filesystem/%{name}-%{version}.tar.gz
-# Source0-md5:	4227f21f779f128945d78ff8aa01a647
+# Source0-md5:	895ee1c3f02973d39e73ccbee9552296
 URL:		http://richard.jones.name/google-hacks/gmail-filesystem/gmail-filesystem.html
 Requires:	kernel-misc-fuse
 Requires:	python-fuse
